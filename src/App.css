@@ -40,3 +40,52 @@
 .read-the-docs {
   color: #888;
 }
+
+.col-5-custom {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: 576px) {
+  .col-5-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.die {
+  width: 100%;
+  aspect-ratio: 1 / 1;        /* perfect square */
+  background-color: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.die:hover {
+  transform: translateY(-2px);
+}
+
+.die:active {
+  transform: scale(0.95);
+}
+
+.die-frozen {
+  background-color: #0d6efd; /* bootstrap primary */
+  color: white;
+  border-color: #0d6efd;
+}
+
+.die:focus-visible {
+  outline: 3px solid #86b7fe; /* bootstrap focus color */
+  outline-offset: 2px;
+}
