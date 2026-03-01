@@ -42,16 +42,6 @@ The player:
 
 ---
 
-## 📂 Project Structure
-
-```
-src/
- ├── components/
- │    ├── Die.jsx
- │    ├── App.jsx
- ├── index.js
- ├── style.css
-```
 
 The project follows a component-based architecture using React functional components and hooks.
 
@@ -62,7 +52,7 @@ The project follows a component-based architecture using React functional compon
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/tenzies.git
+git clone https://github.com/kevbanza/Tenzies.git
 cd tenzies
 ```
 
